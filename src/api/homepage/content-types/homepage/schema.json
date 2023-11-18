@@ -1,0 +1,155 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dataAnalyticsHeading": {
+      "type": "string",
+      "required": true
+    },
+    "dataAnalyticsTitle": {
+      "type": "uid",
+      "targetField": "dataAnalyticsHeading"
+    },
+    "aimlHeading": {
+      "type": "string",
+      "required": true
+    },
+    "aimlTtle": {
+      "type": "uid",
+      "targetField": "aimlHeading"
+    },
+    "dataAnalyticsDesc": {
+      "type": "text",
+      "maxLength": 70
+    },
+    "dataAnalyticsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aimlDesc": {
+      "type": "text",
+      "required": true,
+      "maxLength": 70
+    },
+    "aimlImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dataEngineeringHeading": {
+      "type": "string",
+      "required": true
+    },
+    "dataEngineeringTitle": {
+      "type": "uid",
+      "targetField": "dataEngineeringHeading"
+    },
+    "dataEngineeringDesc": {
+      "type": "text",
+      "required": true,
+      "maxLength": 70
+    },
+    "dataEngineeringImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "arvrmrHeading": {
+      "type": "string",
+      "required": true
+    },
+    "arvrmrTitle": {
+      "type": "uid",
+      "targetField": "arvrmrHeading",
+      "required": true
+    },
+    "arvrmrDesc": {
+      "type": "text",
+      "required": true,
+      "maxLength": 70
+    },
+    "arvrmrImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "advancedAnalyticsHeading": {
+      "type": "string",
+      "required": true
+    },
+    "advancedAnalyticsDesc": {
+      "type": "text",
+      "required": true,
+      "maxLength": 70
+    },
+    "advancedAnalyticsTtile": {
+      "type": "uid",
+      "targetField": "advancedAnalyticsHeading"
+    },
+    "advancedAnalyticsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

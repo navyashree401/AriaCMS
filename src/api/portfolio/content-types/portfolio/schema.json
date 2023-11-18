@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "portfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "portfolio": {
+      "type": "enumeration",
+      "enum": [
+        "DataAnalytics",
+        "DataEngineering"
+      ],
+      "required": true
+    },
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "uid",
+      "targetField": "header",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projectpages",
+  "info": {
+    "singularName": "projectpage",
+    "pluralName": "projectpages",
+    "displayName": "projectpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "industry": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "hpeportfolio": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "uid",
+      "targetField": "heading",
+      "required": true
+    },
+    "valueDelivered": {
+      "type": "richtext",
+      "required": true
+    },
+    "desiredOutcome": {
+      "type": "richtext",
+      "required": true
+    },
+    "hpeSolution": {
+      "type": "richtext",
+      "required": true
+    },
+    "businessChallenge": {
+      "type": "richtext",
+      "required": true
+    },
+    "implementation": {
+      "type": "richtext",
+      "required": true
+    },
+    "designAnndPlan": {
+      "type": "richtext",
+      "required": true
+    },
+    "inventoryAndAssessment": {
+      "type": "richtext",
+      "required": true
+    },
+    "architectureDiagram": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imaage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
